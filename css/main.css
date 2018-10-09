@@ -30,6 +30,7 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     transition: background-color 0.4s ease;
+    font-size: 18px;
 }
 
 nav ul li a.active,
@@ -39,10 +40,12 @@ a:hover {
 
 .logo p {
     left: 0;
+    padding: 20px 30px;
     color: white;
+        font-size: 18px;
+
     text-align: left;
     margin-right: 300px;
-
 }
 
 section.about {
@@ -72,7 +75,7 @@ section.blog {
     width: 35px;
     height: 5px;
     background-color: gray;
-    margin: 6px 0;
+    margin: 5px 0;
     transition: 0.4s;
 }
 
@@ -114,7 +117,7 @@ section h1 {
 
 .about {
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../temp-photos//robot-wallpapers.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images//robot-wallpapers.jpg");
     background-position: center;
     height: 100%;
     background-repeat: no-repeat;
@@ -123,15 +126,15 @@ section h1 {
 }
 
 .about h1 {
-    padding: 27% 10%;
+    padding: 47vh 10%;
     color: lightgray;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
-.about h2 {
+.about h2,.events h2 {
     text-align: center;
     color: darkgray;
-    font-size: 3rem;
+    font-size: 2.5rem;
 
 }
 
@@ -141,7 +144,7 @@ section h1 {
     color: lightgray;
     width: 70%;
     margin: auto;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-top: 20px;
     margin-bottom: 10%;
     text-align: justify;
@@ -152,7 +155,7 @@ section h1 {
 
 
 .events {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../temp-photos//gorgerous-technology-wallpaper-1920x1200-download-free.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images//gorgerous-technology-wallpaper-1920x1200-download-free.jpg");
     background-position: center;
     height: auto;
     background-repeat: no-repeat;
@@ -161,18 +164,11 @@ section h1 {
 
 }
 
-.events h1 {
-    padding: 0px;
-    text-align: center;
-    font-size: 3rem;
-    color: darkgray;
-}
-
-.events h2 {
+.events h3 {
     padding: 10px;
     text-align: center;
-    font-size: 2rem;
-    color: white;
+    font-size: 1.5rem;
+    color: lightgray;
 }
 
 .upcoming-event {
@@ -188,7 +184,7 @@ section h1 {
 .poster {
     width: 70%;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../temp-photos/popular-technology-wallpaper-1920x1200-samsung.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/temporary images/popular-technology-wallpaper-1920x1200-samsung.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -205,6 +201,7 @@ section h1 {
 
 .event-details h2 {
     border-bottom: .5px solid white;
+    font-size: 1.8rem;
 }
 
 .event-details p {
@@ -230,14 +227,14 @@ section h1 {
 
     }
     .logo {
-        border-bottom: .5px solid black;
+        border-bottom: .5px solid white;
         width: 100%;
 
     }
     .logo p {
-        font-size: 1.8em;
+        font-size: 1.1em;
         width: 100%;
-        margin-top: 50px;
+        font-weight: 300px;
         padding-bottom: 15px;
         display: flex;
         justify-content: center;
@@ -246,6 +243,10 @@ section h1 {
 
     #menuicon {
         display: block;
+    }
+    .about h1{
+        padding: 47vh 2%;
+        font-size: 2rem;
     }
 }
 
@@ -260,4 +261,12 @@ section h1 {
     .event-details {
         width: 100%;
     }
+    
+    .about h2, .events h2{
+        font-size: 1.8rem;
+    }
+    .about p{
+        font-size: 1.3rem;
+    }
 }
+
