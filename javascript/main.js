@@ -12,7 +12,8 @@
             if (self.offset().top < (currentScrollPos + navH) && (currentScrollPos + navH) < (self.offset().top + self.outerHeight())) {
                 var targetClass = '.' + self.attr('class') + '-marker';
                 navLinks.removeClass('active');
-                $(targetClass).addClass('active');
+                if(targetClass!='.main-marker')
+                    $(targetClass).addClass('active');
             }
         });
 
@@ -32,3 +33,4 @@ $(document).ready(function () {
         $("#navbar").toggle();
     });
 });
+

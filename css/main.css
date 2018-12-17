@@ -24,32 +24,58 @@ body {
     font-size: 1.1em;
 }
 
+#navbar{
+    margin: 0;
+}
+
+
 nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     text-align: center;
-    background-color: #2196F3;
-    z-index: 10;
+    background-color: #161616;
+    z-index: 999;
+    font-weight:bold;
 }
 
 nav ul li {
     list-style: none;
     display: inline-block;
+    padding:4px 0 ;
 }
 
-nav ul li a {
+nav #navbar li a {
     display: block;
     padding: 20px 30px;
     text-decoration: none;
     color: #fff;
-    transition: background-color 0.4s ease;
+    transition: background-color 0.5s ease;
 }
 
 nav ul li a.active,
 a:hover {
-    color: black;
+    background-color: #252525;
+    border-radius: 12px;
+}
+/********************** move in js******************************/
+#navbar .logo a{
+    transition: none;   
+    padding: 0;
+}
+.logo a:hover{
+    background-color:#161616;
+}
+/********************************************************/
+.logo p {
+    left: 0;
+    color: white;
+    font-family: 'Impact';
+    font-size: 28px;
+    text-align: left;
+    margin-right: 300px;
+
 }
 
 section h1 {
@@ -57,33 +83,54 @@ section h1 {
     text-align: center;
 }
 
-.logo p {
-    left: 0;
-    color: white;
-    text-align: left;
-    margin-right: 300px;
+section.main {
+    background-color: black;
+}
 
+.overlay{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    background-color: rgba(0,0,0,0.88);
+    z-index: 800;
+}
+
+.overlay h1{
+    font-size: 100px;
+    margin: 0;
+    color: white;
+    padding: 12.5% 5.8%;
+    text-align: left;
+    font-family: 'Bungee', cursive;
+}
+
+section.main video {
+    width: 100%;
+    height: 100vh;
+    z-index: -10;
 }
 
 section.about {
-    background-color: #e6e6e8
+    background-color: #e6e6e8;
 }
 
 section.events {
     background-attachment: fixed;
-    background-color: #CFD8DC
+    background-color: #CFD8DC;
 }
 
 section.gallery {
-    background-color: #607D8B
+    background-color: #607D8B;
 }
 
 section.alumni {
-    background-color: #b3c2bf
+    background-color: #b3c2bf;
 }
 
 section.blog {
-    background-color: #e3e3e3
+    background-color: #e3e3e3;
 }
 
 
