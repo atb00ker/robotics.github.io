@@ -1,4 +1,4 @@
-(function () {
+$(document).ready(function () {
     var navLinks = $('nav ul li a'),
         navH = $('nav').height(),
         section = $('section'),
@@ -19,18 +19,13 @@
 
     });
 
-
-
-})();
-
-function myFunction(x) {
-    x.classList.toggle("change");
-
-
-}
-$(document).ready(function () {
     $("#menuicon").click(function () {
         $("#navbar").toggle();
     });
 });
+
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+
 
