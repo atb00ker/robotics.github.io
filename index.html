@@ -1,115 +1,292 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet"> 
-    <link type="text/css" rel="stylesheet" href="css/main.css">
-     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Embedded And Robotics Club</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
-<body>
-    <nav>
-        <div id="menuicon" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-        <ul id="navbar">
-            <li class="logo">
-              <a href="#section1" class="main-marker"><p>Amity ERC</p></a>
-            </li>
-            <li><a href="#section2" class="about-marker">About</a></li>
-            <li><a href="#section3" class="events-marker">Events</a></li>
-            <li><a href="#section4" class="gallery-marker">Gallery</a></li>
-            <li><a href="#section5" class="alumni-marker">Alumni</a></li>
-            <li><a href="#section6" class="blog-marker">Blog</a></li>
-        </ul>
-    </nav>
-    
-    <section class="main" id="section1">
-      <video autoplay muted loop>
-        <source src="media/video/sample.mp4" type="video/mp4">
-      </video>
-      <div class="overlay">
-          <h1> Embedded <br>&ensp;And<br>Robotics <br>&ensp;Club </h1>
-      </div>
-    </section>
+<body id="page-top">
 
-
-    <section class="about" id="section2">
-      <div id="aboutus" class="about prlx_parent">
-<div class="container">
-  <div class="about_background prlx" style="background-image:url(images/about_background.jpg)"></div>
-  <div class="about_shapes"></div>
-
-
-    <div class="row">
-      <div class="col-lg-6 offset-lg-3 text-center section_title">
-
-      </div>
-    </div>
-    <div class="row">
-
-      <div class="col-lg-12 text-center">
-        <div class="about_text">
-          <img src="media/images/background-about.jpg" alt="Backgroung-About" style="width:100%;">
-  <div class="text-block">
-        <p><h2><center><strong>ABOUT US</strong></center></h2><br>
-
-          We often dull ourselves into complacency with the way things are.
-       While growing up there's an idea that is induced into our brains that the world is something that happens right outside your peepers and you just try to find your place and fit in while you see some other 'bright' people running it.
-       When you start interacting with some of these people you learn that they're not very different from you. They might have a little more judgement in some areas but they're basically the same.
-       There's something beyond what is going on in this life, something beyond a house, a car and a set monotous lifestyle that a human being is dulled into. There is another side to this coin and youll see that the moment you realise that if you push something here, another thing pops out on the other side. So be a round peg in a square hole. That way youve got a lot of room to fill in with something that is different.
-       When you work on something, dont think about the non ideal consequences, let the idealism drive you. The non ideal consequences only play one role and that is to balance each other out. There's a reason why seeking idealism is the goal.
-       It doesnt matter if you're taking a step a day, you'll still be farther from if you thought for days and took the same step.
-<br>
-       As Bob Dylan rightly said<br>
-       "The chance wont come again,<br>
-       and dont speak too soon<br>
-       For the wheels still in spin'<br>
-       and there's no tellin who that its namin'<br>
-       For the loser now will be later to win<br>
-       For the times they are a-changin"
-
-<center>
-<br><br><b><strong>Our mission</strong></b><br>
-The prime objective of our club is to provide a learning platform where we can spread technical knowledge. We plan not only to participate in events and competitions but also belive in passing technical knowledge to all interested people who are passionate about electronics.
-
-<br><br><b><strong>What we do</strong></b><br>
-Robotics is budding technical field, we introduce it to new students and try to peek up their interest in this field.
-We also conduct technical sessions to provide hands on practical knowledge to all interested people. Also, we form teams to participate in inter college robotics competitions.
-</center></p><br>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">ERC</a>
             </div>
-          </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Incentives</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-      </div>
-  </div>
-</div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Amity Embedded And Robotics Club</h1>
+                <hr>
+                <p>A welcoming community of students interested in hands-on learning. A group of engineering in Amity,
+                    willing to teach and learn with you.</p>
+                <a href="#" class="btn btn-primary btn-xl">Join Now</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">We've got what you need!</h2>
+                    <hr class="light">
+                    <p class="text-faded text-left">We often dull ourselves into complacency with the way things are.
+                        While
+                        growing up there's an idea that is induced into our brains that the world is something that
+                        happens right outside your peepers and you just try to find your place and fit in while you see
+                        some other 'bright' people running it. When you start interacting with some of these people you
+                        learn that they're not very different from you. They might have a little more judgement in some
+                        areas but they're basically the same. There's something beyond what is going on in this life,
+                        something beyond a house, a car and a set monotous lifestyle that a human being is dulled into.
+                        There is another side to this coin and you'll see that the moment you realise that if you push
+                        something here, another thing pops out on the other side. So be a round peg in a square hole.
+                        That way youve got a lot of room to fill in with something that is different. When you work on
+                        something, dont think about the non ideal consequences, let the idealism drive you. The non
+                        ideal consequences only play one role and that is to balance each other out. There's a reason
+                        why seeking idealism is the goal. It doesnt matter if you're taking a step a day, you'll still
+                        be farther from if you thought for days and took the same step.</p>
+                    <p class="text-faded">
+                        "The chance wont come again,<br>
+                        and dont speak too soon<br>
+                        For the wheels still in spin'<br>
+                        and there's no tellin who that its namin'<br>
+                        For the loser now will be later to win<br>
+                        For the times they are a-changin"<br>
+                        — Bob Dylan
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="events" id="section3">
-        <h1>Events</h1>
-
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">What's in it for me?</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fas fa-heart fa-4x text-primary"></i>
+                        <h3>Community</h3>
+                        <p class="text-muted">Meet people with same interests as you.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fas fa-map-signs fa-4x text-primary"></i>
+                        <h3>Guide</h3>
+                        <p class="text-muted">Meet people who inspire you to learn and help you get started.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fas fa-newspaper fa-4x text-primary"></i>
+                        <h3>Information</h3>
+                        <p class="text-muted">Get information about events that you can participate and learn in.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fas fa-microchip fa-4x text-primary"></i>
+                        <h3>Hardware</h3>
+                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="gallery" id="section4">
-        <h1>Gallery</h1>
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
-
-    <section class="alumni" id="section5">
-        <h1>Alumni</h1>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>Ready to start your next project with us? That's great! Let's meet and disscuss what exciting we
+                        can goal achieve. Click join now to fill the form and get started!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x text-primary sr-contact"></i>
+                    <p>98991602565</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fas fa-envelope fa-3x text-primary sr-contact"></i>
+                    <p><a href="mailto:your-email@your-domain.com">group@emailid.com</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <a href="#" class="btn btn-primary btn-xl center-btn">Join Now</a>
+            </div>
+        </div>
     </section>
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
+        crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
 
-    <section class="blog" id="section6">
-        <h1>Blog</h1>
-    </section>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-
-    <script src="javascript/main.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
 
 </body>
 
